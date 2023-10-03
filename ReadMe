@@ -1,0 +1,9 @@
+//Design Pattern in Js
+------------------------>
+1. What is Design Pattern 
+Ans->Javascript Design pattern are reusable ,proven solutions to common problem that developers encounter while writing javascript code .
+it help to improve code origanizations maintainability and scalability
+
+
+type of Design patther are :-
+1. Factory Pattern
