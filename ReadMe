@@ -7,3 +7,7 @@ it help to improve code origanizations maintainability and scalability
 
 type of Design patther are :-
 1. Factory Pattern
+---> We have learn about this pattern . we can create object without specify the exact class of object that will be created
+
+2. Singleton Pattern 
+---> The Singleton Pattern is a design pattern used in software engineering to ensure that a class has only one instance, and it provides a global point of access to that instance. This means that no matter how many times you request an instance of a Singleton class, you always get the same instance. It's particularly useful when you want to limit the creation of a resource-intensive object or when you need to maintain a single point of control over certain actions or resources.
