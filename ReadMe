@@ -11,3 +11,13 @@ type of Design patther are :-
 
 2. Singleton Pattern 
 ---> The Singleton Pattern is a design pattern used in software engineering to ensure that a class has only one instance, and it provides a global point of access to that instance. This means that no matter how many times you request an instance of a Singleton class, you always get the same instance. It's particularly useful when you want to limit the creation of a resource-intensive object or when you need to maintain a single point of control over certain actions or resources.
+
+3.Strategy Pattern 
+---> The Strategy Pattern is a behavioral design pattern used in software engineering to define a family of algorithms, encapsulate each one of them, and make them interchangeable. This pattern allows you to select an algorithm from a family of algorithms at runtime, without altering the code that uses the algorithm.
+
+4. Null Object Pattern 
+The Null Object Pattern is a design pattern used in object-oriented programming to handle the absence of an object or the need to represent "null" or "empty" objects in a more structured way, without causing null pointer exceptions or complex conditional checks. It provides a way to avoid explicit null checks in your code and can improve code readability and maintainability.
+
+5.Builder Pattern 
+---> 
+The Builder Pattern is a design pattern used in software development to construct complex objects step by step. It aims to solve the problem of telescoping constructors, where a class might have multiple constructors with different combinations of parameters, leading to code that is hard to read and maintain when there are many optional parameters.
