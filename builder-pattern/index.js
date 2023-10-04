@@ -46,7 +46,53 @@ const builder = new UserBuilder("abhishek");
 builder.SetAge(20);
 builder.SetAddress(new Address("North Delhi","Aman Vihar"))
 builder.SetPhone(987456321)
-console.log(builder)
+// console.log(builder)
 
 // const user= new User("bob",undefined,undefined,new Address("North Delhi","Aman Vihar"));
 // console.log(user)
+
+
+// Example for 2 
+//define a class for main object you want to build 
+class Product{
+    constructor(name,price,description){
+        this.name = name;
+        this.price = price;
+        this.description = description
+    }
+
+    displayInfo(){
+        console.log(`Product name is ${this.name} and Price value is ${this.price}. you can read Description ${this.description}`)
+    }
+}
+
+
+class ProductBuilder{
+    constructor(name,price,description){
+        this.name = name || "";
+        this.price = price || 0;
+        this.description = description || ""
+    };
+
+    SetName(name){
+        this.name = name;
+        return this // Return 'this' to support method chaining
+    };
+    setPrice(price){
+        this.price = price;
+        return this
+    };
+
+    setDescription(description){
+this.description = description;
+return this;
+
+    };
+    Build(){
+    return new Product(this.name,this.price,this.description)
+    }
+}
+
+const ProductBuilde_chain = new ProductBuilder().setPrice(500).SetName("BitCoins").setDescription("it's is Cryptocurreny coins");
+console.log(ProductBuilde_chain.Build());
+ProductBuilde_chain.Build().displayInfo()
